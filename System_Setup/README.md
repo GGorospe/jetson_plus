@@ -12,5 +12,5 @@ Directions:
 3. sudo chmod+ *.sh
 4. source jetson_nano_setup_one.sh
 5. source jetson_nano_setup_two.sh
-...
+(continue with all other scripts)
 8. source jetson_nano_setup_five.sh
