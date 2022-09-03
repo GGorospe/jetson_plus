@@ -1,10 +1,12 @@
 #!/bin/bash
+# THIS FILE SHOULD BE SOURCED, example: source jetson_nano_setup_three.sh
 
 # The first line "#!/bin/bash" is called the "shebang" and is an interpreter directive, that tells the machine to execute the following file using the Bash shell.
 
-# Title: NMAI_Nano_Setup_Three.sh
+# Title: jetson_nano_setup_three.sh
 
-# This is a setup script for jetson nano 4gb systems intended to be used as a part of the New Mexico AI Challenge. This script adds to Nvidia's latest version of jetpack.
+
+# This is a setup script for jetson nano 4gb systems. This script adds to Nvidia's latest version of jetpack.
 
 # Many of the programs here are added to reproduce a jetbot like environment.
 # This script borrows from the Nvidia-ai-iot/jetbot repository on github.
@@ -27,10 +29,10 @@ wget --content-disposition https://nvidia.box.com/shared/static/fjtbno0vpo676a25
 python3 -m pip install --no-cache torch-1.10.0-cp36-cp36m-linux_aarch64.whl
 
 # TorchVision
-sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
+sudo apt-get -y install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
 
 git clone --branch v0.11.1 https://github.com/pytorch/vision torchvision
 cd torchvision
 export BUILD_VERSION=0.x.0
 python3 setup.py install --user
-
+cd ..

@@ -1,10 +1,11 @@
 #!/bin/bash
+# THIS FILE SHOULD BE SOURCED, example: source jetson_nano_setup_five.sh
 
 # The first line "#!/bin/bash" is called the "shebang" and is an interpreter directive, that tells the machine to execute the following file using the Bash shell.
 
 # Title: NMAI_Nano_Setup_Five.sh
 
-# This is a setup script for jetson nano 4gb systems intended to be used as a part of the New Mexico AI Challenge. This script adds to Nvidia's latest version of jetpack.
+# This is a setup script for jetson nano 4gb systems. This script adds to Nvidia's latest version of jetpack.
 
 # Many of the programs here are added to reproduce a jetbot like environment.
 # This script borrows from the Nvidia-ai-iot/jetbot repository on github.
