@@ -11,6 +11,7 @@ Directions:
 2. Navigate to System_Setup directory
 3. sudo chmod+ *.sh
 4. source jetson_nano_setup_one.sh
-5. source jetson_nano_setup_two.sh
-(continue with all other scripts)
+5. source jetson_nano_setup_two.sh 
+6. source jetson_nano_setup_three.sh
+7. source jetson_nano_setup_four.sh 
 8. source jetson_nano_setup_five.sh
