@@ -29,7 +29,7 @@ wget --content-disposition https://nvidia.box.com/shared/static/fjtbno0vpo676a25
 python3 -m pip install --no-cache torch-1.10.0-cp36-cp36m-linux_aarch64.whl
 
 # TorchVision
-sudo apt-get -y install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
+sudo apt-get -y install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev libmpi-dev
 
 git clone --branch v0.11.1 https://github.com/pytorch/vision torchvision
 cd torchvision
