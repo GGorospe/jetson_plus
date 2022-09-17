@@ -34,7 +34,5 @@ jupyter notebook password
 
 # Installing jupyter lab extension "Clickable Widget"
 git clone https://github.com/jaybdub/jupyter_clickable_image_widget
-cd jupyter_clickable_image_widget
-sudo pip3 install -e .
+sudo pip3 install -e jupyter_clickable_image_widget/.
 sudo jupyter labextension install js
-cd ..

@@ -1,5 +1,4 @@
 #!/bin/bash
-# THIS FILE SHOULD BE SOURCED, example: source jetson_nano_setup_one.sh
 
 # The first line "#!/bin/bash" is called the "shebang" and is an interpreter directive, that tells the machine to execute the following file using the Bash shell.
 
@@ -26,11 +25,15 @@ sudo apt install curl
 sudo pip3 install jetson-stats
 
 # Pip and python dependencies
-sudo apt-get update
-sudo apt install python3-pip python3-pil # Preffered Installer Program (PIP) and Python image processing (PIL)
+sudo apt-get -y update
+sudo apt install -y python3-pip python3-pil # Preffered Installer Program (PIP) and Python image processing (PIL)
+pip3 install --upgrade pip
+sudo pip3 install -U setuptools==58.3.0 # For managing and installing python packages
+sudo pip3 install traitlets
+sudo pip3 install ipywidgets
+sudo pip3 install sparkfun-qwiic
 sudo pip3 install Cython # C language extensions for python
 sudo pip3 install --upgrade numpy  # At start Numpy = 1.13.3, upgraded to numpy 1.19.5 
 sudo pip3 install -U testresources mock future
-sudo pip3 install -U setuptools==58.3.0 # For managing and installing python packages
 # Already installed at this point: wheel, cmake, zip,
 # Not installed, with no plans to install: pillow

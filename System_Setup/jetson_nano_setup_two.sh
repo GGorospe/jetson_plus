@@ -1,6 +1,4 @@
 #!/bin/bash
-# THIS FILE SHOULD BE SOURCED, example: source jetson_nano_setup_two.sh
-
 
 # The first line "#!/bin/bash" is called the "shebang" and is an interpreter directive, that tells the machine to execute the following file using the Bash shell.
 

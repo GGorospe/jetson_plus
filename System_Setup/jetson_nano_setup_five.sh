@@ -22,17 +22,15 @@
 # Installing Jetbot Software
 sudo apt install python3-smbus
 git clone https://github.com/NVIDIA-AI-IOT/jetbot
-cd jetbot
-sudo python3 setup.py install
+sudo python3 jetbot/setup.py install
 
 # Installing Jetbot Services
-cd jetbot/utils
-python3 create_stats_service.py
-sudo mv jetbot_stats.service /etc/systemd/system/jetbot_stats.service
+python3 jetbot/jetbot/utils/create_stats_service.py
+sudo mv jetbot/jetbot/utils/jetbot_stats.service /etc/systemd/system/jetbot_stats.service
 sudo systemctl enable jetbot_stats
 sudo systemctl start jetbot_stats
-python3 create_jupyter_service.py
-sudo mv jetbot_jupyter.service /etc/systemd/system/jetbot_jupyter.service
+python3 jetbot/jetbot/utils/create_jupyter_service.py
+sudo mv jetbot/jetbot/utils/jetbot_jupyter.service /etc/systemd/system/jetbot_jupyter.service
 sudo systemctl enable jetbot_jupyter
 sudo systemctl start jetbot_jupyter
 
