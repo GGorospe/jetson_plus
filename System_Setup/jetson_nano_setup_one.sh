@@ -21,13 +21,12 @@
 sudo usermod -aG i2c $USER
 
 # Command line tools and compilation tools
-sudo apt install curl
+sudo apt -y install curl
 sudo pip3 install jetson-stats
 
 # Pip and python dependencies
 sudo apt-get -y update
 sudo apt install -y python3-pip python3-pil # Preffered Installer Program (PIP) and Python image processing (PIL)
-pip3 install --upgrade pip
 sudo pip3 install -U setuptools==58.3.0 # For managing and installing python packages
 sudo pip3 install traitlets
 sudo pip3 install ipywidgets
