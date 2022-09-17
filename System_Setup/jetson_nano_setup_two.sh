@@ -16,8 +16,10 @@
 
 # Intalling Components >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # Installing TensorFlow, version 2.5.0 (Instructions from Nvidia)
-sudo apt-get install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev liblapack-dev libblas-dev gfortran
-sudo pip3 install -U --no-deps numpy==1.19.4 future==0.18.2 mock==3.0.5 keras_preprocessing==1.1.2 keras_applications==1.0.8 gast==0.4.0 protobuf pybind11 cython pkgconfig packaging
-sudo env H5PY_SETUP_REQUIRES=0 pip3 install -U h5py==3.1.0
-sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v50 tensorflow
+sudo apt-get -y install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev libjpeg8-dev liblapack-dev libblas-dev gfortran
+sudo pip3 install -v protobuf==3.9.2.
+sudo pip3 install -U --no-deps keras_preprocessing==1.1.2 keras_applications==1.0.8 gast==0.4.0  pybind11 pkgconfig packaging
+sudo env H5PY_SETUP_REQUIRES=0 
+pip3 install -U h5py==3.1.0 #Tensorflow wheel seems to uninstall this
+sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 tensorflow==2.5.0+nv21.08
 # Problems: protobuf can occasionally cause issues, so I've explicitly called out for installation of v 3.9.2
